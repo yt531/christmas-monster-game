@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center; /* 文字置中 */
+  margin: 20px;
+}
+
+h1 {
+  text-align: center; /* 標題置中 */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#monster-animation {
+  width: 300px; /* 固定寬度 */
+  height: 300px; /* 固定高度 */
+  margin: 20px auto; /* 上下間距置中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* 確保圖片不會超出容器 */
+}
+
+#monster-image {
+  width: 300px; /* 固定寬度 */
+  height: 300px; /* 固定高度 */
+  object-fit: cover; /* 確保圖片完整填滿容器 */
+  display: block; /* 確保圖片為區塊元素 */
+}
+
+#anger-display,
+#timer-display,
+#message-display {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center; /* 按鈕水平置中 */
+  flex-wrap: wrap; /* 確保按鈕在較窄螢幕時換行 */
+  gap: 10px; /* 按鈕間的距離 */
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
